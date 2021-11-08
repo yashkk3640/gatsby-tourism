@@ -1,0 +1,50 @@
+#header {
+  width: 100%;
+  text-align: center;
+  font-weight: 800;
+  font-family: "Comic Sans MS", "Comic Sans";
+}
+
+#content {
+  margin: 0px auto;
+  max-width: 2000px;
+  min-height: 90vh;
+}
+
+#footer {
+  padding: 5% 10%;
+  color: #eeeeee;
+  background-color: #333333;
+
+  & .sitemap {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+
+    & .container {
+      margin: 15px;
+
+      & h3 {
+        color: yellowgreen;
+        cursor: default;
+      }
+
+      & a {
+        font-size: 0.9em;
+        padding: 2px 5px;
+        color: #cccccc;
+        float: left;
+        clear: both;
+
+        &:hover {
+          color: yellowgreen;
+        }
+        &:visited {
+          color: rgb(122, 176, 194);
+        }
+        &:active {
+          color: lightcoral;
+        }
+      }
+    }
+  }
+}
